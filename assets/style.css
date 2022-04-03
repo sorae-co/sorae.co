@@ -118,7 +118,7 @@ body {
 }
 
 .公司概要 {
-    margin-top: 7rem;
+    margin-top: 6rem;
     text-align: center;
 }
 
@@ -400,6 +400,7 @@ body {
     .最新情報-列表-項目 {
         display: grid;
         grid-template-columns: min-content 1fr;
+        padding: 1rem 0;
     }
 
     .最新情報-列表-項目-分類 {
@@ -409,6 +410,9 @@ body {
 
     .最新情報-列表-項目-標題 {
         grid-column: 1 / 3;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .公司概要 {
