@@ -1,0 +1,432 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+html {
+    font-size: 16px;
+    height: 100%;
+
+    --outline-color: rgb(34, 34, 34);
+
+    --gray-75: rgb(237, 237, 237);
+    --gray-100: rgb(234, 234, 234);
+    --gray-300: rgb(218, 218, 218);
+    --gray-400: rgb(153, 153, 153);
+    --gray-600: rgb(102, 102, 102);
+    --gray-800: rgb(34, 34, 34);
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --outline-color: rgb(17, 17, 17);
+
+        --gray-75: rgb(34 34 34);
+        --gray-100: rgb(44 44 44);
+        --gray-300: rgb(53 53 53);
+        --gray-400: rgb(101 101 101);
+        --gray-600: rgb(192 192 192);
+        --gray-800: rgb(255 255 255);
+    }
+
+    .矚目區塊-商標,
+    .矚目區塊-標題-圖片,
+    .旗下服務-網格系統-項目-商標-圖片 {
+        filter: invert(1);
+    }
+}
+
+body {
+    font-family: "Noto Sans CJK TC";
+    height: 100%;
+    background: var(--gray-75);
+}
+
+.界限容器 {
+    width: 910px;
+    margin: 3rem auto;
+}
+
+.外框 {
+    position: fixed;
+    background: var(--outline-color);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 1% 100%, 1% 98%, 96% 98%, 99% 90%, 99% 2%, 4% 2%, 1% 10%, 1% 100%, 0 100%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.穹頂 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.6rem;
+}
+
+.穹頂-連結 {
+    color: var(--gray-600);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.穹頂-連結.穹頂-連結_啟用的 {
+    font-weight: bold;
+    color: var(--gray-800);
+}
+
+.穹頂-分隔線 {
+    color: var(--gray-400);
+}
+
+.矚目區塊 {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.矚目區塊-商標 {
+    width: 160px;
+    opacity: 0.95;
+}
+
+.矚目區塊-標題 {
+    font-family: "Noto Serif CJK TC";
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    color: var(--gray-800);
+}
+
+.矚目區塊-標題-圖片 {
+    width: 330px;
+    opacity: 0.95;
+}
+
+.矚目區塊-說明 {
+    margin: 0 auto;
+    margin-top: 2rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--gray-600);
+    width: 90%;
+}
+
+.公司概要 {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.公司概要-標題 {
+    background: var(--gray-800);
+    color: var(--gray-75);
+    display: inline-block;
+    line-height: 1.5;
+    padding: 0.1rem 0.6rem;
+    font-family: "Noto Serif CJK TC";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transform: skew(-7deg);
+}
+
+.公司概要-標題-文字 {
+    transform: skew(7deg);
+}
+
+.公司概要-切分網格 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    gap: 5rem;
+    text-align: left;
+}
+
+.公司概要-切分網格-網格系統 {
+    grid-template-columns: 130px 1fr;
+    display: grid;
+    gap: 0.6rem 1rem;
+}
+
+.公司概要-切分網格-網格系統-分隔線 {
+    grid-column: 1 / 3;
+    border-bottom: 1px solid var(--gray-300);
+}
+
+.公司概要-切分網格-網格系統-標籤 {
+    font-weight: 500;
+    color: var(--gray-600);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.公司概要-切分網格-網格系統-內容 {
+    color: var(--gray-800);
+    line-height: 1.8;
+}
+
+.頁腳文字 {
+    text-align: center;
+    font-size: 14px;
+    color: var(--gray-400);
+    margin-top: 6rem;
+}
+
+.旗下服務 {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.旗下服務-標題 {
+    background: var(--gray-800);
+    color: var(--gray-75);
+    display: inline-block;
+    line-height: 1.5;
+    padding: 0.1rem 0.6rem;
+    font-family: "Noto Serif CJK TC";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transform: skew(-7deg);
+}
+
+.旗下服務-標題-文字 {
+    transform: skew(7deg);
+}
+
+.旗下服務-網格系統 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.旗下服務-網格系統-項目 {
+    text-align: center;
+    background: var(--gray-100); /* #eaeaea;*/
+    padding: 2rem;
+    border-bottom: 7px solid var(--gray-300);
+    border-top: 7px solid var(--gray-300);
+    transform: skew(-7deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0px 0px 20px rgb(0 0 0 / 3%);
+}
+
+.旗下服務-網格系統-項目-商標 {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray-75);
+    height: 130px;
+    width: 200px;
+    border: 7px solid var(--gray-300);
+}
+
+.旗下服務-網格系統-項目-商標-圖片 {
+    transform: skew(7deg);
+    opacity: 0.95;
+    z-index: 1;
+}
+
+.旗下服務-網格系統-項目-標題 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--gray-800);
+    transform: skew(7deg);
+    z-index: 1;
+}
+
+.旗下服務-網格系統-項目-說明 {
+    margin-top: 0.7rem;
+    line-height: 1.8;
+    font-size: 15px;
+    color: var(--gray-600);
+    transform: skew(7deg);
+    z-index: 1;
+}
+
+.旗下服務-網格系統-項目-數字 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 10rem;
+    color: var(--gray-300);
+    right: -1rem;
+    bottom: -1.3rem;
+    line-height: 1;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+.最新情報 {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.最新情報-標題 {
+    background: var(--gray-800);
+    color: var(--gray-75);
+    display: inline-block;
+    line-height: 1.5;
+    padding: 0.1rem 0.6rem;
+    font-family: "Noto Serif CJK TC";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transform: skew(-7deg);
+}
+
+.最新情報-標題-文字 {
+    transform: skew(7deg);
+}
+
+.最新情報-列表 {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.最新情報-列表-項目 {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid var(--gray-300);
+    padding: 1rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+.最新情報-列表-項目:hover .最新情報-列表-項目-標題 {
+    text-decoration: underline;
+}
+
+.最新情報-列表-項目-分類 {
+    background: var(--gray-300);
+    color: var(--gray-800);
+    padding: 0.1rem 1rem;
+    transform: skew(-7deg);
+}
+
+.最新情報-列表-項目-分類-文字 {
+    transform: skew(7deg);
+}
+.最新情報-列表-項目-時間 {
+    color: var(--gray-600);
+    font-weight: 300;
+}
+
+.最新情報-列表-項目-標題 {
+    color: var(--gray-800);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1050px) {
+    html {
+        font-size: 15px;
+    }
+
+    .外框 {
+        border: 7px solid var(--outline-color);
+        clip-path: none;
+        background: transparent;
+    }
+
+    .界限容器 {
+        width: 100%;
+        padding: 0 2rem;
+        margin: 2rem 0;
+        box-sizing: border-box;
+    }
+
+    .矚目區塊 {
+        margin-top: 4rem;
+    }
+
+    .矚目區塊-商標 {
+        width: 120px;
+    }
+
+    .矚目區塊-標題 {
+        margin-top: 1.5rem;
+    }
+
+    .矚目區塊-標題-圖片 {
+        width: 250px;
+    }
+
+    .矚目區塊-說明 {
+        max-width: 560px;
+        width: 100%;
+    }
+
+    .旗下服務 {
+        margin-top: 4rem;
+    }
+
+    .旗下服務-網格系統 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .旗下服務-網格系統-項目 {
+        transform: initial;
+        margin: 0 -2rem;
+    }
+
+    .旗下服務-網格系統-項目-商標 {
+        transform: skew(-7deg);
+        height: 120px;
+        width: 190px;
+    }
+
+    .旗下服務-網格系統-項目-標題 {
+        transform: initial;
+    }
+
+    .旗下服務-網格系統-項目-說明 {
+        padding: 0 2rem;
+        max-width: 460px;
+        transform: initial;
+    }
+
+    .旗下服務-網格系統-項目-數字 {
+        transform: skew(-7deg);
+    }
+
+    .最新情報 {
+        margin-top: 4rem;
+    }
+
+    .最新情報-列表-項目 {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    .最新情報-列表-項目-分類 {
+        grid-column: 1;
+        white-space: nowrap;
+    }
+
+    .最新情報-列表-項目-標題 {
+        grid-column: 1 / 3;
+    }
+
+    .公司概要 {
+        margin-top: 4rem;
+    }
+
+    .公司概要-切分網格 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
+    }
+
+    .公司概要-切分網格-欄位:nth-child(2) {
+        border-top: 1px solid var(--gray-300);
+        padding-top: 0.5rem;
+    }
+}
