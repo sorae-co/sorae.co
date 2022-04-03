@@ -51,6 +51,7 @@ body {
 }
 
 .外框 {
+    display: none;
     position: fixed;
     background: var(--outline-color);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 1% 100%, 1% 98%, 96% 98%, 99% 90%, 99% 2%, 4% 2%, 1% 10%, 1% 100%, 0 100%);
@@ -328,12 +329,6 @@ body {
 @media screen and (max-width: 1050px) {
     html {
         font-size: 15px;
-    }
-
-    .外框 {
-        border: 7px solid var(--outline-color);
-        clip-path: none;
-        background: transparent;
     }
 
     .界限容器 {
