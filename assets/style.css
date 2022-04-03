@@ -96,7 +96,7 @@ body {
 }
 
 .矚目區塊-標題 {
-    font-family: "Noto Serif TC";
+    font-family: "Noto Serif TC", "Noto Serif JP";
     font-weight: bold;
     font-size: 2rem;
     margin-top: 2.5rem;
@@ -128,7 +128,7 @@ body {
     display: inline-block;
     line-height: 1.5;
     padding: 0.1rem 0.6rem;
-    font-family: "Noto Serif TC";
+    font-family: "Noto Serif TC", "Noto Serif JP";
     font-weight: bold;
     font-size: 1.2rem;
     transform: skew(-7deg);
@@ -187,7 +187,7 @@ body {
     display: inline-block;
     line-height: 1.5;
     padding: 0.1rem 0.6rem;
-    font-family: "Noto Serif TC";
+    font-family: "Noto Serif TC", "Noto Serif JP";
     font-weight: bold;
     font-size: 1.2rem;
     transform: skew(-7deg);
@@ -278,7 +278,7 @@ body {
     display: inline-block;
     line-height: 1.5;
     padding: 0.1rem 0.6rem;
-    font-family: "Noto Serif TC";
+    font-family: "Noto Serif TC", "Noto Serif JP";
     font-weight: bold;
     font-size: 1.2rem;
     transform: skew(-7deg);
