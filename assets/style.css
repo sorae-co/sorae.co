@@ -73,7 +73,7 @@ body {
 .穹頂-連結 {
     color: var(--gray-600);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 0.95rem;
 }
 
 .穹頂-連結.穹頂-連結_啟用的 {
@@ -171,7 +171,7 @@ body {
 
 .頁腳文字 {
     text-align: center;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: var(--gray-400);
     margin-top: 6rem;
 }
@@ -248,7 +248,7 @@ body {
 .旗下服務-網格系統-項目-說明 {
     margin-top: 0.7rem;
     line-height: 1.8;
-    font-size: 15px;
+    font-size: 0.95rem;
     color: var(--gray-600);
     transform: skew(7deg);
     z-index: 1;
@@ -423,5 +423,9 @@ body {
     .公司概要-切分網格-欄位:nth-child(2) {
         border-top: 1px solid var(--gray-300);
         padding-top: 0.5rem;
+    }
+
+    .頁腳文字 {
+        margin-top: 4rem;
     }
 }
